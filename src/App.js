@@ -9,7 +9,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/DVM_0341/" element={<HomePage />} />
         <Route path="/booklist" element={<BookList />} />
         <Route path="/:workId" element={<SingleBookPage />} />
         <Route path="/favorites" element={<Favorites />} />
