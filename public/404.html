@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found</title>
+</head>
+<body>
+    <script>
+        const pathSegments = window.location.pathname.split('/').filter(Boolean);
+        const firstSegment = pathSegments[0];
+        const isRootDir = pathSegments.length === 1 && firstSegment === 'DVM_0341';
+        const is404Page = window.location.pathname.endsWith('404.html');
+
+        if (isRootDir && !is404Page) {
+            window.location.replace('./DVM_0341/');
+        }
+    </script>
+</body>
+</html>
