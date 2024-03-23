@@ -1,5 +1,3 @@
-// SingleBookPage.js
-
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import getBooks from './bookAPI';
@@ -24,7 +22,7 @@ const SingleBookPage = () => {
         fetchBook();
     }, [workId]);
     const handleAddToFavorites = () => {
-        // Add the book details to local storage
+  
         if (book) {
             const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
             const isAlreadyAdded = favorites.some(favorite => favorite.work_id === book.work_id);

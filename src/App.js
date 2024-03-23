@@ -7,7 +7,7 @@ import Favorites from './services/favorites';
 
 const App = () => {
   return (
-    <Router basename="/DVM_0341">
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/booklist" element={<BookList />} />

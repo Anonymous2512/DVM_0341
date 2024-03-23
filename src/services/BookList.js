@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from 'react';
 import getBooks from './bookAPI';
 
@@ -17,7 +15,7 @@ const BookList = () => {
     useEffect(() => {
         const fetchBooks = async () => {
             try {
-                setLoading(true); // Set loading state to true before fetching
+                setLoading(true);
                 const data = await getBooks();
                 setBooks(data.results);
                 setLoading(false);
@@ -27,7 +25,7 @@ const BookList = () => {
             }
         };
 
-        fetchBooks(); // Fetch books every time the component mounts or updates
+        fetchBooks(); 
     }, []);
 
     useEffect(() => {

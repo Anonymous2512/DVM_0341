@@ -1,13 +1,9 @@
-// services/search.js
-
-// Function to filter books based on the search query
 export const searchBooks = (books, query) => {
     return books.filter((book) => {
-        // Convert title and authors to lowercase for case-insensitive search
+       
         const title = book.title.toLowerCase();
         const authors = book.authors.map((author) => author.toLowerCase());
 
-        // Check if the title or any author contains the search query
         return title.includes(query.toLowerCase()) || authors.some((author) => author.includes(query.toLowerCase()));
     });
 };

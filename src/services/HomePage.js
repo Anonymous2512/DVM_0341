@@ -4,7 +4,7 @@ import Image2 from '../images/image2.png';
 
 const HomePage = () => {
     const handleGetStarted = () => {
-        window.location.href = '/DVM_0341/booklist';
+        window.location.href = '/booklist';
       };
       
   return (

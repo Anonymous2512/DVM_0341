@@ -1,5 +1,3 @@
-// services/bookAPI.js
-
 import axiosInstance from '../axios';
 
 const getBooks = async () => {

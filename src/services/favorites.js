@@ -1,4 +1,3 @@
-// favorites.js
 import openBookPage from './singlebook';
 import React, { useState, useEffect } from 'react';
 import './favorite.css';
@@ -7,8 +6,7 @@ const FavoritesPage = () => {
     const [favorites, setFavorites] = useState([]);
 
     useEffect(() => {
-        // Retrieve stored favorites from local storage
-        const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+       const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
         setFavorites(storedFavorites);
     }, []);
     const handleRemoveFromFavorites = (workId, event) => {

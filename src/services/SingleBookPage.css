@@ -1,5 +1,3 @@
-/* SingleBookPage.css */
-
 .single-book-detail {
     display: flex;
     flex-direction: column;
@@ -25,7 +23,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 40px; /* Add some spacing between columns */
+    margin: 40px;
 }
 
 .book-cover {
