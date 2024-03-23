@@ -10,9 +10,9 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/DVM_0341/" element={<HomePage />} />
-        <Route path="/booklist" element={<BookList />} />
-        <Route path="/:workId" element={<SingleBookPage />} />
-        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/DVM_0341/booklist" element={<BookList />} />
+        <Route path="/DVM_0341/:workId" element={<SingleBookPage />} />
+        <Route path="/DVM_0341/favorites" element={<Favorites />} />
       </Routes>
     </Router>
   );
