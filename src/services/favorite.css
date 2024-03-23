@@ -1,0 +1,66 @@
+h3 {
+   margin-left: 20px;
+    color:#70d5fe ;
+    font-size:30px;
+    margin-bottom: 4%;
+    margin-top: 2%;
+  }
+  .fav-book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .favcol{
+    display: flex;
+    flex-direction:column;
+  }
+.favorite-book{
+  border: 2px solid;
+  border-color: wheat;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  width: 60%;
+  justify-content: space-between;
+  transition: background-color 0.5s;
+  cursor: pointer;
+  
+}
+.favorite-book:hover {
+  background-color: hsl(22, 51%, 29%);
+}
+.fav-detail{
+  color:  #FBEAEB;
+ margin-bottom: 4%;
+ margin-left: 20px;
+}
+.delete{
+  border: wheat;
+  background-color: red;
+  color: #FBEAEB;
+  font-size: 150%;
+  border: 3px solid wheat;
+  padding: 1%;
+  margin-top: 10px;
+  margin-right: 20px;
+  transition: background-color 0.5s;
+    cursor: pointer;
+}
+.delete:hover {
+  background-color:  hsl(22, 51%, 29%); 
+}
+@media (max-width: 740px) {
+  h3 {
+    margin-left: 20px;
+     color:#70d5fe ;
+     font-size:25px;
+     margin-bottom: 4%;
+   
+   }
+   .delete{
+    width: 100%;
+   }
+   .favorite-book{
+    flex-direction: column;
+   }
+}

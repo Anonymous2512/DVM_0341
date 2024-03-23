@@ -1,0 +1,72 @@
+/* SingleBookPage.css */
+
+.single-book-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #70d5fe;
+    font-size: 50px;
+    margin-bottom: 20px; 
+}
+.cols-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px; /* Add some spacing between columns */
+}
+
+.book-cover {
+    width: 500px;
+    height:450px;
+}
+.add-to-favorites{
+    border: 3px solid wheat;
+background-color: #a80808;
+color:#FBEAEB;
+transition: background-color 0.5s;
+  cursor: pointer;
+  margin-top: 5%;
+  font-size: 25px;
+}
+.add-to-favorites:hover{
+    background-color:  hsl(22, 51%, 29%);
+}
+.book-detail-2 {
+    margin-top: 10px;
+    color: #fbeaeb;
+    font-size: 120%;
+}
+
+.book-detail-2 strong {
+    margin-right: 5px;
+}
+@media screen and (max-width: 1017px) {
+    .book-cover {
+        width: 90%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 800px) {
+    .cols-container {
+       
+        flex-direction: column;
+        ;
+    }
+    .book-cover {
+        width: 80%;
+        height: auto;
+    }
+}

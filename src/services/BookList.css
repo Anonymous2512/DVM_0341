@@ -1,0 +1,96 @@
+body{
+    background-color: black;
+  }
+  .book-list {
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content:center; /* Distribute space between book containers */
+  }
+  
+  .book-container {
+    border: 3px double;
+    border-color:wheat;
+    margin-left: 20px;
+    background-color: black;
+    width: 300px; 
+    padding: 1%; 
+    margin-bottom: 3%;
+    padding-top: 2%; 
+    transition: background-color 0.5s;
+    cursor: pointer;
+  }
+  .book-container:hover {
+    background-color:  hsl(22, 51%, 29%); /* Change background color on hover */
+  }
+  h1 {
+   
+    margin-top: -.75%;
+    color:#70d5fe ;
+    font-size:50px;
+  }
+
+  strong {
+    font-weight: bold;
+  
+  }
+  .detail {
+    margin-bottom: 5%;
+    color:#FBEAEB; 
+    font-size: 120%;
+  }
+ 
+  .search-bar {
+    width: 60%; 
+    height: 30px; 
+    margin-bottom: 20px;
+    margin-left: 2%;
+    margin-right: auto;
+  }
+  .suggestions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px;
+  } 
+  
+  
+  .suggestions li {
+    padding: 5px;
+  }
+  
+  .suggestions li a {
+    text-decoration: none;
+    color: #FBEAEB ;
+  }
+  
+  .suggestions li a:hover {
+    background-color: hsl(22, 51%, 29%);
+  }
+  .favorites-button{
+border: 3px solid wheat;
+background-color: #007bff;
+color:#FBEAEB;
+font-size: 25px;
+margin-left: 15%;
+transition: background-color 0.5s;
+  cursor: pointer;
+  }
+.favorites-button:hover{
+  background-color:  hsl(22, 51%, 29%);
+}
+p{
+  color: #FBEAEB;
+  font-size: 20px;
+}
+@media (max-width: 575px) {
+  .search-bar {
+   margin-left: 20%;
+    }
+    .favorites-button{
+      margin-bottom: 10%;
+      margin-left: 35%;
+              }
+}

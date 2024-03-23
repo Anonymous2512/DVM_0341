@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './services/HomePage';
+import BookList from './services/BookList';
+import SingleBookPage from './services/SingleBookPage';
+import Favorites from './services/favorites';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/booklist" element={<BookList />} />
+        <Route path="/:workId" element={<SingleBookPage />} />
+        <Route path="/favorites" element={<Favorites />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
